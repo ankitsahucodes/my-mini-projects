@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Movie Detail</title>
+  </head>
+  <body>
+    <header>
+      
+      <nav>
+        <a href="index.html">Movie Database</a>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="movies.html">Movies</a></li>
+          <li><a href="report.html">Report</a></li>
+        </ul>
+      </nav>
+      <h2>Movie Details</h2>
+    </header>
+    <main>
+      <section id="movieDetail"></section>
+    </main>
+    <footer>
+      <p>&copy; 2023 Comapany Name. All rights reserved.</p>
+    </footer>
+
+    <script>
+      let movieDatabase = [
+        {
+          name: "Movie 1",
+          genre: "Action",
+          details: "This is an action-packed movie.",
+          releaseDate: "2023-01-15",
+          director: "John Doe",
+        },
+        {
+          name: "Movie 2",
+          genre: "Drama",
+          details: "A dramatic story unfolds in this movie.",
+          releaseDate: "2023-02-20",
+          director: "Jane Smith",
+        },
+        {
+          name: "Movie 3",
+          genre: "Comedy",
+          details: "Get ready to laugh with this comedy.",
+          releaseDate: "2023-05-20",
+          director: "Jane Walk",
+        },
+      ];
+
+      function getParameterByName(name) {
+        let url = new URL(window.location.href);
+
+        return url.searchParams.get(name);
+      }
+
+      let movieName = getParameterByName("name");
+
+      let movie;
+      for (let i = 0; i < movieDatabase.length; i++) {
+        if (movieDatabase[i].name === movieName) {
+          movie = movieDatabase[i];
+        }
+      }
+
+      let movieDetailElement = document.getElementById("movieDetail");
+      if (movie) {
+        movieDetailElement.innerHTML = `
+        <h2>${movie.name}</h2>
+        <p><strong>Genre: </strong>${movie.genre}</p>
+        <p><strong>Details: </strong>${movie.details}</p>
+        <p><strong>Release Date: </strong>${movie.releaseDate}</p>
+        <p><strong>Director: </strong>${movie.director}</p>
+        `;
+      } else {
+        movieDetailElement.innerHTML = "Movie Not Found.";
+      }
+    </script>
+  </body>
+</html>
