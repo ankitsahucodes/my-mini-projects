@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Feedback Form</title>
+  </head>
+  <body>
+    <h1>Feedback Form</h1>
+    <form id="feedbackForm">
+      <label for="nameInput">Name:</label>
+      <input type="text" id="nameInput" />
+      <br /><br />
+
+      <label for="feedbackTextarea">Feedback:</label><br />
+      <textarea id="feedbackTextarea" rows="4" cols="50"></textarea>
+      <br /><br />
+
+      <label>Rate our service:</label><br />
+      <label for="excellentService"
+        ><input
+          type="radio"
+          name="service"
+          id="excellentService"
+          value="excellent"
+        />Excellent </label
+      ><br />
+
+      <label for="goodService"
+        ><input
+          type="radio"
+          name="service"
+          id="goodService"
+          value="good"
+        />Good </label
+      ><br />
+
+      <label for="fairService"
+        ><input
+          type="radio"
+          name="service"
+          id="fairService"
+          value="fair"
+        />Fair </label
+      ><br /><br />
+
+      <label>Select Topics of Interest:</label><br />
+      <label for="technology">
+        <input
+          type="checkbox"
+          name="interest"
+          value="Technology"
+          id="technology"
+        />Technology </label
+      ><br />
+
+      <label for="travel">
+        <input
+          type="checkbox"
+          name="interest"
+          value="Travel"
+          id="travel"
+        />Travel </label
+      ><br />
+
+      <label for="food">
+        <input
+          type="checkbox"
+          name="interest"
+          value="Food"
+          id="food"
+        />Food </label
+      ><br /><br />
+
+      <label>Overall Experience:</label>
+      <select id="overallExpSelect">
+        <option value="Very Satisfied">Very Satisfied</option>
+        <option value="Satisfied">Satisfied</option>
+        <option value="Neutral">Neutral</option>
+      </select>
+      <br /><br />
+
+      <input type="submit" value="Submit" />
+    </form>
+
+    <div id="formResult"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
