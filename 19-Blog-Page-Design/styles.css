@@ -1,0 +1,239 @@
+*{
+    margin: 0px;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px 10px 10px 0px;
+    font-size: small;
+}
+
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+li {
+    display: flex;
+    padding: 10px 20px 10px 30px;
+}
+
+a {
+    background-color: black;
+    color: white;
+    text-decoration: none;
+} 
+
+header {
+     background-color: black;
+}
+
+.subs {
+    border: 1px solid white;
+    border-radius: 10px;
+    list-style: none;
+    padding: 10px;
+}
+
+
+.middleLogo {
+    text-align: center;
+    background-color: black;
+    padding-top: 85px;
+    color: grey;
+    padding-bottom: 100px;
+}
+
+
+.middleLogo > h2 {
+    font-weight: 100;
+}
+
+
+.image1 {
+    
+    max-width: 200px;
+    height: auto;
+}
+
+/* below black bg */
+
+.image2 {
+    max-width: 100%;
+    height: auto;  
+}
+
+
+.two {
+    display: flex;
+    margin: 30px 30px;
+}
+
+@media (max-width: 1300px) {
+  .two {
+     display: flex; 
+    flex-wrap: wrap;
+  }
+}
+
+.inside-two {
+    margin: 30px 10px 0px 20px;
+    display: inline;
+}
+
+
+.inside-two h2 {
+    font-size: 30px;
+    padding-bottom: 30px;
+    font-weight: 700;
+    padding-top: 10px;
+}
+
+.inside-two h3 {
+    color: blue;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.inside-two p {
+    font-size: 22px;
+    font-family:  Georgia, 'Times New Roman', Times, serif;
+    color: gray;
+    letter-spacing: 0.5px;
+    line-height: 1.3;
+}
+.image3 {
+    max-width: 85px;
+    display: flex;
+}
+
+
+.two-1 {
+    display: flex;
+    margin-top: 100px;
+}
+
+.two-2 {
+    padding-left: 20px;
+    padding-top: 10px;
+}
+
+.two-2 h4 {
+    font-size: 20px;
+}
+
+.two-2 p {
+    font-family: sans-serif;
+    font-size: medium;
+}
+
+/* 3 columns */
+
+.image4 {
+    max-width: 100%;
+    border-radius: 10px;
+    height: auto;
+}
+
+
+.three {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+   
+    margin-top: 25px;
+    margin-bottom: 50px;
+}
+
+@media (max-width: 1024px) {
+  .three {
+    display: flex; 
+    flex-wrap: wrap;
+  }
+}
+
+.three-1 {
+    display: flex;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+    list-style: none;
+    max-width: 440px;   
+}
+
+.three-1 > h4 {
+    color: rgb(12, 91, 226);
+    margin: 20px 0px 5px 0px;
+}
+
+.three-1 > h3 {
+    margin-bottom: 15px;
+}
+
+.three-1 > p {
+    color: rgb(122, 116, 116);
+}
+
+.three-info {
+    margin-top: 20px;
+    display: flex;
+}
+
+.info {
+    padding-left: 20px;
+    padding-top: 15px;
+}
+
+
+.four {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    /* gap: 20px; */
+    margin-top: 25px;
+    margin-bottom: 30px;
+}
+
+.image5 {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.four-1 {
+    max-width: 600px;
+    height: auto;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+@media (max-width: 1300px) {
+    .four {
+        flex-wrap: wrap;
+    }
+}
+
+.four-1 > h4 {
+    color: rgb(12, 91, 226);
+    margin: 20px 0px 5px 0px;
+}
+
+.four-1 > h3 {
+    margin-bottom: 15px;
+}
+
+.four-1 > p {
+    color: rgb(122, 116, 116);
+}
+
+hr {
+    margin: 0px 20px;
+    height: 3px;
+    background-color: gainsboro;
+    border: none;
+} 
